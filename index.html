@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Kirk F — Travel &amp; Documentary Photography</title>
+<meta name="description" content="Travel, street, and nature photography by Kirk F. Browse galleries from Uganda, Mumbai, England, Budapest, and more.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500;1,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <span class="monogram">KF</span>
+      The Kirk F
+    </a>
+    <nav>
+      <ul class="site-nav">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="https://kirkf.pixieset.com/" target="_blank" rel="noopener">Prints</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="hero">
+  <!-- Hero background slides are injected by js/main.js from HERO_IMAGES -->
+  <div class="hero-content">
+    <div class="wrap">
+      <span class="hero-eyebrow">TRAVEL &amp; DOCUMENTARY PHOTOGRAPHY</span>
+      <h1 class="hero-title">The world, <em>one quiet moment</em> at a time.</h1>
+      <p class="hero-sub">I'm Kirk — I chase the light at the edges of the day, on streets and shorelines from home to wherever the next trip takes me.</p>
+    </div>
+  </div>
+  <div class="hero-scroll">SCROLL</div>
+</section>
+
+<section class="intro">
+  <div class="wrap">
+    <p>Every photograph here is a place I stood, a moment I didn't want to lose — a fisherman at dawn, a dog watching a festival, a building catching the last light of the day. Browse by location below, or head straight to prints.</p>
+  </div>
+</section>
+
+<section class="galleries" id="work">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Where I've <em>been</em></h2>
+      <span class="section-count" id="gallery-count"></span>
+    </div>
+    <div class="gallery-grid" id="gallery-grid">
+      <!-- Populated by js/main.js from js/galleries.js -->
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="about-portrait">
+      <img src="images/about/about-01-kirk-portrait.jpg" alt="Kirk F on location at night, camera in hand" loading="lazy">
+    </div>
+    <div class="about-text">
+      <span class="kicker">ABOUT</span>
+      <h2>Hi, I'm Kirk.</h2>
+      <p>I've spent the last several years photographing the places I travel to and the streets closer to home — always drawn to the hour just before sunrise or just after sunset, when everyday scenes turn into something worth stopping for.</p>
+      <p>This site is a running log of that work. New galleries get added as new trips happen — follow along on Instagram, or reach out below if you'd like to book a session or order a print.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Prints and bookings live on Pixieset.</h2>
+    <div class="cta-actions">
+      <a class="btn btn-solid" href="https://kirkf.pixieset.com/" target="_blank" rel="noopener">Shop Prints on Pixieset ↗</a>
+      <a class="btn btn-outline" href="https://instagram.com/thekirkf" target="_blank" rel="noopener">Follow @thekirkf ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-info">
+      <span class="kicker">GET IN TOUCH</span>
+      <h2>Bookings &amp; inquiries</h2>
+      <p>Interested in a shoot, a custom print, or just want to say hi? Send a note and I'll get back to you.</p>
+    </div>
+
+    <!--
+      CONTACT FORM — this is a static site, so the form needs a form-handling
+      service. It's wired up for Formspree (free tier, no backend required).
+      See README.md for the 2-minute setup to make this live.
+    -->
+    <form id="contact-form" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="New inquiry from thekirkf.com">
+      <button type="submit" class="btn btn-solid">Send message</button>
+      <p class="form-status" id="form-status"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; <span id="year"></span> The Kirk F Photography</span>
+    <ul class="footer-links">
+      <li><a href="https://instagram.com/thekirkf" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://kirkf.pixieset.com/" target="_blank" rel="noopener">Pixieset</a></li>
+      <li><a href="mailto:info@thekirkf.com">info@thekirkf.com</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/galleries.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

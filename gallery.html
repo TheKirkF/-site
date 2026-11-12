@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — The Kirk F</title>
+<meta name="description" content="Photo gallery by Kirk F.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500;1,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <span class="monogram">KF</span>
+      The Kirk F
+    </a>
+    <nav>
+      <ul class="site-nav">
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="https://kirkf.pixieset.com/" target="_blank" rel="noopener">Prints</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="gallery-header">
+  <div class="wrap">
+    <a href="index.html#work" class="back-link">&larr; All galleries</a>
+    <span class="kicker" id="gallery-kicker">GALLERY</span>
+    <h1 id="gallery-title">Loading&hellip;</h1>
+  </div>
+</section>
+
+<section class="photo-grid">
+  <div class="wrap">
+    <div class="grid" id="photo-grid"></div>
+    <div class="empty-state" id="empty-state" style="display:none;">
+      <h2>More coming soon.</h2>
+      <p>Photos from this gallery haven't been added yet — check back soon, or follow along on Instagram for previews.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; <span id="year"></span> The Kirk F Photography</span>
+    <ul class="footer-links">
+      <li><a href="https://instagram.com/thekirkf" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://kirkf.pixieset.com/" target="_blank" rel="noopener">Pixieset</a></li>
+      <li><a href="mailto:info@thekirkf.com">info@thekirkf.com</a></li>
+    </ul>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="js/galleries.js"></script>
+<script src="js/gallery-page.js"></script>
+</body>
+</html>
